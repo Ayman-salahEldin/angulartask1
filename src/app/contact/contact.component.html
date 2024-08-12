@@ -1,0 +1,33 @@
+
+
+<div class="contact py-5">
+    <div class="container py-5">
+        <h2 class="text-center">CONTACT SECTION</h2>
+        <div class="shape d-flex justify-content-center align-items-center text-white">
+            <div class="line mx-2 "></div>
+            <span class="text-dark"><i class="fa-solid fa-star  "></i></span> 
+            <div class="line mx-2"></div>
+           </div>
+    <!-- <div class="container py-5 " > -->
+        <div  class="w-50 p-3 mx-auto mt-5 ">
+            <!-- @if (iswrite==true) {
+                <label  for="userName" class="d-block" >userName : </label>
+            } -->
+                
+            <label #userNameLabel  for="userName" class="text-info  d-none">user name:</label>             
+            <input (keypress)="showUserElem()" id="userName" type="text" placeholder="userName" name="userName" class="form-control border-0 border-bottom py-3 position-relative" >
+
+            <label #userAgeLabel  for="userAge" class="text-info d-none">user age:</label>
+            <input (keypress)="showAgeElem()"  id="userAge" type="text" placeholder="userAge" name="userName" class="form-control border-0 border-bottom py-3 position-relative">
+
+            <label #userMailLabel for="userEmail" class="text-info  d-none" >userEmail : </label>
+            <input (keypress)="showMailElem()" id="userEmail" type="text" placeholder="userEmail" name="userName" class="form-control border-0 border-bottom py-3 position-relative ">
+
+            <label #userPassLabel for="userPassword" class="text-info  d-none"  for="userPassword" >userPassword : </label>
+            <input  (keypress)="showPassElem()" id="userPassword" type="text" placeholder="userPassword" name="userName" class="form-control border-0 border-bottom py-3 position-relative ng-valid ng-dirty ng-touched">
+            <button  class="btn mt-4 text-white bg-info" > send Message </button>
+        </div>
+    </div>
+    
+    </div>
+<!-- </div> -->

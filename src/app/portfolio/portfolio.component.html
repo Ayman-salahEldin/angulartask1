@@ -1,0 +1,37 @@
+
+<div class="portofolio py-5">
+    <div class="container py-5 " >
+        <h2 class="text-center ">PORTOFOLIO COMPNENT</h2>
+        <div class="shape d-flex justify-content-center align-items-center text-white">
+            <div class="line mx-2 "></div>
+            <span class="text-dark"><i class="fa-solid fa-star  "></i></span> 
+            <div class="line mx-2"></div>
+           </div>
+    </div>
+    <div class="container">
+        <div class="row g-4">
+            @for (item of imags; track $index) {
+                <div class="col-md-4">
+                    <div (click)="open(item.imgsrc)" class="item overflow-hidden position-relative">
+                        <img [src]="item.imgsrc" class="card w-100" alt="">
+                        <div class="layer d-flex justify-content-center align-items-center ">
+                            <span class="search-icon ">
+                                <i  class="text-white fa-solid fa-plus fa-6x"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@if (isClick==true) {
+    <div class="imgcontainer  d-flex justify-content-center align-items-center">
+        <div class="imgclick position-relative d-flex justify-content-center align-items-center ">
+            <img [src]="imgsrc" class="w-75 mt-3 mx-auto" alt="">
+            <i class="fa-regular fa-circle-xmark fs-1 text-info" (click)="close()"></i>
+        </div>
+    
+    </div>
+}

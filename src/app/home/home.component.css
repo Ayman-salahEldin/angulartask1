@@ -1,0 +1,8 @@
+.home{
+    height: 100vh;
+}
+.line{
+   width: 100px;
+   height: 3px;
+   background-color: white;
+}

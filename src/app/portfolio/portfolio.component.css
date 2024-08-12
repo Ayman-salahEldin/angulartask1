@@ -1,0 +1,33 @@
+/* .home{
+    height: 100vh;
+} */
+.line{
+   width: 100px;
+   height: 3px;
+   background-color: black;
+}
+
+.layer
+{
+ position: absolute;
+top:0 ;
+left: 0;
+right: 0;
+bottom: 0; 
+ background-color: aqua;
+ opacity: 0;
+ transition: all 0.5s;
+}
+.layer:hover
+{
+    opacity: 0.7;
+}
+.imgcontainer
+{
+    position: fixed;
+    top: 15%;
+    left: 20%;
+    
+    
+    
+}
